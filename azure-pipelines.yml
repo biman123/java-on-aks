@@ -29,8 +29,8 @@ stages:
   jobs:  
   - job: Build 
     displayName: Build and Push Container Images
-    pool:
-      vmImage: $(vmImageName)
+    #pool:
+      #vmImage: $(vmImageName)
     steps:
     - task: AzureKeyVault@1
       displayName: Fetch secrets from Azure Key vault
@@ -91,8 +91,8 @@ stages:
   jobs:
   - deployment: Deploy
     displayName: Deploy to AKS
-    pool:
-      vmImage: $(vmImageName)
+    #pool:
+      #vmImage: $(vmImageName)
     environment: 'Piggymetrics.default'
     strategy:
       runOnce:
