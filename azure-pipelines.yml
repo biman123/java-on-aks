@@ -33,7 +33,7 @@ stages:
     - task: AzureKeyVault@1
       displayName: Fetch secrets from Azure Key vault
       inputs:
-        azureSubscription: 'Visual Studio Enterprise Subscription – MPN'
+        azureSubscription: 'biman-mpn-sub'
         KeyVaultName: 'piggymetrics-vault'
         SecretsFilter: '*'
 
@@ -99,7 +99,7 @@ stages:
           - task: AzureKeyVault@1
             displayName: Fetch secrets from Azure Key vault
             inputs:
-              azureSubscription: 'Visual Studio Enterprise Subscription – MPN'
+              azureSubscription: 'biman-mpn-sub'
               KeyVaultName: 'piggymetrics-vault'
               SecretsFilter: '*'
           
