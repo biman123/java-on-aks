@@ -18,7 +18,7 @@ spec:
     tier: frontend
     app: gateway
 ---
-apiVersion: extensions/v1beta1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: gateway
@@ -28,6 +28,9 @@ metadata:
     app: gateway
 spec:
   replicas: 1
+  selector:
+    matchLabels:
+      app: gateway
   strategy:
     type: RollingUpdate
   template:
