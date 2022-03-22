@@ -8,7 +8,7 @@ description: "End-to-end experience for Java apps in Azure Kubernetes Service (A
 urlFragment: "java-on-aks"
 ---
 
-#End-to-end experience - Java on AKS
+##End-to-end experience - Java on AKS
 
 ![](https://github.com/actions/java-on-aks/workflows/Build%20%26%20Deploy%20to%20AKS/badge.svg)
 
