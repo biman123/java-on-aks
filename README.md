@@ -39,7 +39,7 @@ This guide walks you through how to deploy and manage Java apps on the Azure Kub
 ![](./media/java.jpeg) ![](./media/kubernetes.png) ![](./media/aks-logo.png) ![](./media/acr.png) 
 -->
 
-## What will you experience
+# What will you experience
 
 You will:
 - Build Piggymetrics - build a proof-of-concept application, which demonstrates 
